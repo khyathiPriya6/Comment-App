@@ -1,0 +1,77 @@
+/* Write your CSS here */
+.app-container {
+  padding: 50px;
+}
+
+.comment-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-heading {
+  font-family: roboto;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.name-input {
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-color: #dee0e3;
+  border-style: solid;
+  width: 100%;
+}
+
+.comment-input {
+  border-color: #dee0e3;
+  border-style: solid;
+  outline: none;
+  padding: 5px;
+}
+
+.add-comment-button {
+  color: #ffffff;
+  border-radius: 5px;
+  border-width: 0px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #0284c7;
+}
+
+.comment-img {
+  margin: 10px;
+}
+
+.comment-count-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.count-comment-button {
+  color: #ffffff;
+  border-radius: 5px;
+  border-width: 0px;
+  padding: 8px;
+  background-color: #0284c7;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+.comment-para {
+  font-family: roboto;
+}
+
+.comment-para {
+  color: #475569;
+  font-family: roboto;
+}
