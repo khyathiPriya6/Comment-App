@@ -27,7 +27,10 @@ const CommentItem = props => {
           <p className="profile-icon-name">{name[0]}</p>
         </div>
         <div className="comment-details">
-          <p className="name-style">{name}</p>
+          <div className="name-time-section">
+            <p className="name-style">{name}</p>
+            <p className="date-style">{date}</p>
+          </div>
 
           <p className="comment-style">{comment}</p>
         </div>
@@ -37,12 +40,16 @@ const CommentItem = props => {
           <img src={imgUrl} className="like-btn-style" alt="like-icon" />
           <p className={likeParaStyle}>Like</p>
         </button>
-        <button type="submit" className="img-btn-style" onClick={clickDelete}>
+        <button
+          type="submit"
+          className="img-btn-style"
+          onClick={clickDelete}
+          testid="delete"
+        >
           <img
             src="https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png"
             className="del-btn"
             alt="delete"
-            testid="delete"
           />
         </button>
       </div>
