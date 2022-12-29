@@ -2,6 +2,8 @@ import {Component} from 'react'
 
 import {v4 as uuidv4} from 'uuid'
 
+import {formatDistanceToNow} from 'date-fns'
+
 import CommentItem from '../CommentItem/index'
 
 import './index.css'
@@ -55,7 +57,7 @@ class Comments extends Component {
       comment,
       liked: false,
       className: iconColour,
-      date: new Date(),
+      date: formatDistanceToNow(new Date()),
     }
     this.setState(prevState => ({
       prevCommentList: [...prevState.prevCommentList, newComment],
@@ -134,3 +136,4 @@ class Comments extends Component {
   }
 }
 export default Comments
+
