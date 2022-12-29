@@ -27,11 +27,10 @@
 }
 
 /* Write your CSS here */
-
 .list-style {
   list-style: none;
   width: 100%;
-  margin-left: 54px;
+
   padding: 10px;
 }
 
@@ -104,9 +103,11 @@
 .name-time-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .date-style {
   color: #64748b;
   font-family: roboto;
+  margin-left: 10px;
 }
